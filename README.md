@@ -1,7 +1,9 @@
 # ownCloud App: Files Archiving
 
-This ownCloud App is an project to extend the external storage app by adding GWDG CDSTAR archive storage.
-An extra hook loads the new backend inside the files_external which communicates with CDSTAR API using curl.
+This ownCloud app works like the windows network drive app, it registers a new archive storage "CDSTAR" in
+the files_external app. The hook creates a new backend with the cdstar storage class, that extends the
+OC\Files\Storage\Common class, like the other external storages do. As authentication mechanism I used the
+wnd auth classes.
 
 ## Links
 

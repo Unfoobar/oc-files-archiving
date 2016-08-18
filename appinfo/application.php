@@ -20,7 +20,7 @@ class Application extends App {
      * @param array $params
      */
     public function __construct($params=[]) {
-        parent::__construct('archiving', $params);
+        parent::__construct('files_archiving', $params);
         $container = $this->getContainer();
 
         $container->registerService('Logger', function($c) {
